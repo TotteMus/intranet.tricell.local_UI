@@ -1,0 +1,56 @@
+<h1 style="padding-bottom:10px;">Add New Research Object</h1>
+
+<form name="newresearchobjectform" action="http://localhost:3000/api/newresearchobject" onSubmit="return formCheckNewResearchObject()" method="post">
+
+<!-- Name, Number, textbox start -->
+<table>
+<tr>
+<td class="variablecol" valign="top" style="padding-right: 10px;">OBJECT NUMBER : <br /></td>
+<td style=" padding-bottom: 10px;"><input type="text" name="fobjectNumber" id="fobjectNumber" size="10" maxlength="20" /></td>
+</tr>
+<tr><td class="tablespacer"></td></tr>
+<tr>
+<td class="variablecol" valign="top"  style="padding-right: 10px;">OBJECT NAME : <br /></td>
+<td style=" padding-bottom: 10px;"><input type="text" name="fobjectName" id="fobjectName" size="60" maxlength="255" /></td>
+</tr>
+<tr><td class="tablespacer"></td></tr>
+</tr>
+<tr>
+<td class="variablecol" valign="top" style="padding-right: 10px;">OBJECT TEXT : &nbsp;</td>
+<td class="valuecol" style=" padding-bottom: 10px;"><textarea rows="5" cols="30" name="fobjectText" id="fobjectText" wrap="off"></textarea></td>
+</tr>
+</table>
+<!-- Name, Number, textbox slut -->
+
+
+
+<!-- datasheet och links start -->
+<table align="center">
+<tr>
+<td class="variablecol" style="text-align:left;" valign="middle">SECURITY DATA SHEET : &nbsp;</td>
+<tr>
+</tr>
+<td class="valuecol"><input type="text" name="fsecurityDataSheet" id="fsecurityDataSheet" size="80" maxlength="255" placeholder="filename.pdf" /></td>
+</tr>
+<tr><td class="tablespacer"></td></tr>
+<tr>
+<td class="variablecol" style="text-align:left;" valign="middle">PRESENTATION VIDEO : &nbsp;</td>
+</tr>
+<tr>
+<td class="valuecol" ><input type="text" name="fpresentationVideoLink" id="fpresentationVideoLink" size="80" maxlength="255" placeholder="https://..." /></td>
+</tr>
+<tr><td class="tablespacer"></td></tr>
+<tr>
+<td class="variablecol" style="text-align:left;" valign="middle">SECURITY VIDEO : &nbsp;</td>
+</tr>
+<tr>
+<td class="valuecol"><input type="text" name="fsecurityVideoLink" id="fsecurityVideoLink" size="80" maxlength="255" placeholder="https://..." /></td>
+</tr>
+<tr><td class="tablespacer"></td></tr>
+</table>
+<!-- datasheet och links slut -->
+
+<p align="center">
+<input type="submit" class="button" value="Create" /><input class="button" type="reset" value="Reset Form" />
+</p>
+</form>

@@ -1,0 +1,51 @@
+<form name="editresearchobjectform" action="http://localhost:3000/api/editresearchobject/!{id}" onSubmit="return formCheckNewResearchObject()" method="post">
+
+<table>
+<tr>
+<td class="variablecol" valign="top" style="padding-right: 10px;">OBJECT NUMBER :&nbsp;</td>
+<td style="padding-bottom: 10px;"><input type="text" name="fobjectNumber" id="fobjectNumber" size="10" maxlength="20" value="!{objectNumber}" /></td>
+</tr>
+<tr><td class="tablespacer"></td></tr>
+<tr>
+<td class="variablecol" valign="top" style="padding-right: 10px;">OBJECT NAME :&nbsp;</td>
+<td style="padding-bottom: 10px;"><input type="text" name="fobjectName" id="fobjectName" size="60" maxlength="255" value="!{objectName}" /></td>
+</tr>
+<tr><td class="tablespacer"></td></tr>
+<tr>
+<td class="variablecol" valign="top" style="padding-right: 10px;">OBJECT STATUS :&nbsp;</td>
+<td style="padding-bottom: 10px;">
+    <select class="select" name="fobjectStatus" id="fobjectStatus">
+    <option value="Active" !{objectStatus=='Active' ? 'selected' : ''}>Active</option>
+    <option value="Inactive" !{objectStatus=='Inactive' ? 'selected' : ''}>Inactive</option>
+    <option value="Classified" !{objectStatus=='Classified' ? 'selected' : ''}>Classified</option>
+    <option value="Destroyed" !{objectStatus=='Destroyed' ? 'selected' : ''}>Destroyed</option>
+    </select>
+</td>
+</tr>
+<tr><td class="tablespacer"></td></tr>
+<tr>
+<td class="variablecol" valign="top" style="padding-right: 10px;">OBJECT TEXT :&nbsp;</td>
+<td style="padding-bottom: 10px;"><textarea rows="5" cols="60" name="fobjectText" id="fobjectText" wrap="off">!{objectText}</textarea></td>
+</tr>
+<tr><td class="tablespacer"></td></tr>
+<tr>
+<td class="variablecol" valign="top" style="padding-right: 10px;">SECURITY DATA SHEET :&nbsp;</td>
+<td style="padding-bottom: 10px;"><input type="text" name="fsecurityDataSheet" id="fsecurityDataSheet" size="60" maxlength="255" value="!{securityDataSheet}" /></td>
+</tr>
+<tr><td class="tablespacer"></td></tr>
+<tr>
+<td class="variablecol" valign="top" style="padding-right: 10px;">PRESENTATION VIDEO :&nbsp;</td>
+<td style="padding-bottom: 10px;"><input type="text" name="fpresentationVideoLink" id="fpresentationVideoLink" size="60" maxlength="255" value="!{presentationVideoLink}" /></td>
+</tr>
+<tr><td class="tablespacer"></td></tr>
+<tr>
+<td class="variablecol" valign="top" style="padding-right: 10px;">SECURITY VIDEO :&nbsp;</td>
+<td style="padding-bottom: 10px;"><input type="text" name="fsecurityVideoLink" id="fsecurityVideoLink" size="60" maxlength="255" value="!{securityVideoLink}" /></td>
+</tr>
+<tr><td class="tablespacer"></td></tr>
+</table>
+
+<p>
+<input type="submit" class="button" value="Save" />
+</p>
+</form>
