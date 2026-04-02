@@ -55,13 +55,9 @@ Security mechanisms included in this project are deliberately simplified to supp
 ## Author
 
 Casper Danielsson
-
 Higher Education IT Program
-
 Course: User Interface Design (5 ECTS)
-
 IT student at Åland University of Applied Sience 
-
 Åland Islands, Finland
-
 Casper.danielsson@ha.ax
+2026
