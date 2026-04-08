@@ -1,0 +1,62 @@
+*
+{
+	font-size: 14px;
+	font-family: arial;
+}
+personnelregistry
+{
+	background-color: #ffffff;
+	width: 100%;
+}
+employee
+{
+	display: table;
+	margin-left: 30pt;
+	border-top: 1px solid;
+	border-collapse: collapse;
+	border-color: #000000;
+}
+employeecode,name,signaturedate, dateofbirth,sex,bloodtype,height,weight,rank,securitylevel,department
+{
+	font-family: arial;
+	font-weight: bold;
+	color: #ffffff;
+	background-color: #b0dfdf;
+	text-align: center;
+	vertical-align: middle;
+	height: 30px;
+	display: table-cell;
+}
+employeecode,signaturedate, securitylevel
+{
+	width: 100px;
+}
+rank
+{
+	width: 150px;
+}
+department
+{
+	width: 250px;
+}
+dateofbirth,sex,bloodtype,height,weight
+{
+	width: 70px;
+}
+name
+{
+	display: table-cell;
+	width: 210px;
+	background-color: #548d8d;
+	color: #0000ff;
+	font-size: 14pt;
+	font-weight: bold;
+	text-align: left;
+	padding-left: 2px;
+	vertical-align: middle;
+
+}
+background, strenghts, weaknesses
+{
+	display: none;
+}
