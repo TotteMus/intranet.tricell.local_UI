@@ -15,6 +15,23 @@ This repository only consists of the new frontend. Students must integrate it wi
 
 ---
 
+This repository contains several different frontend implementations of the same web application. Each implementation is stored in a separate Git branch.
+---
+
+## Branch Overview
+- **main** – Original base version of the application
+- **bootstrap-version** – Layout implemented using the Bootstrap framework
+- **html5-version** – Layout implementation using semantic HTML5
+- **multimedia-version** – Layout implementation using HTML5 including multimedia elements
+- **responsive-version** – Responsive layout implementation
+- **css-grid-version** – Layout implemented using CSS Grid
+
+## How to View a VersionOn GitHub, select the desired branch from the branch selector at the top of
+the repository page.
+Each branch represents a different approach to responsive frontend design.
+
+#this branch is the bootstrap-verision
+
 ## Project Structure
 
 /config          – Configuration files
